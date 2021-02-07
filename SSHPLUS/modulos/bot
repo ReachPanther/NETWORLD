@@ -1,6 +1,6 @@
 #!/bin/bash
 #===================================================
-#	SCRIPT: BOT SSHPLUS MANAGER
+#	SCRIPT: BOT PLUS MANAGER
 #   DATA ATT:   28 de Dez 2020
 #	DESENVOLVIDO POR:	CRAZY_VPN
 #   API SHELLBOT:   SHAMAN
@@ -22,9 +22,9 @@ ShellBot.username
 fun_menu() {
     [[ "${message_from_id[$id]}" == "$id_admin" ]] && {
         local env_msg
-        env_msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg+="<b>SEJA BEM VINDO(a) AO BOT NET WORLD</b>\n"
-        env_msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
+        env_msg="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n"
+        env_msg+="<b>BEM VINDO(a) AO BOT NET WORLD</b>\n"
+        env_msg+="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n\n"
         env_msg+="⚠️ <i>SELECIONE UMA OPCAO ABAIXO !</i>\n\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} --text "$env_msg" \
             --reply_markup "$keyboard1" \
@@ -38,9 +38,9 @@ fun_menu() {
     }
     if [[ "$(grep -w "${message_from_username}" $ativos | grep -wc 'revenda')" != '0' ]]; then
         local env_msg
-        env_msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg+="<b>SEJA BEM VINDO(a) AO BOT NET WORLD</b>\n"
-        env_msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
+        env_msg="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n"
+        env_msg+="<b>BEM VINDO(a) AO BOT NET WORLD</b>\n"
+        env_msg+="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n\n"
         env_msg+="⚠️ <i>SELECIONE UMA OPCAO ABAIXO !</i>\n\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} --text "$env_msg" \
             --reply_markup "$keyboard2" \
@@ -48,9 +48,9 @@ fun_menu() {
         return 0
     elif [[ "$(grep -w "${message_from_username}" $ativos | grep -wc 'subrevenda')" != '0' ]]; then
         local env_msg
-        env_msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg+="<b>SEJA BEM VINDO(a) AO BOT NET WORLD</b>\n"
-        env_msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
+        env_msg="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n"
+        env_msg+="<b>BEM VINDO(a) AO BOT NET WORLD</b>\n"
+        env_msg+="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n\n"
         env_msg+="⚠️ <i>SELECIONE UMA OPCAO ABAIXO !</i>\n\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} --text "$env_msg" \
             --reply_markup "$keyboard3" \
@@ -73,9 +73,9 @@ fun_ajuda() {
     }
     if [[ "$id_chatuser" = "$id_admin" ]]; then
         local env_msg
-        env_msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg+="<b>SEJA BEM VINDO(a) AO BOT NET WORLD</b>\n"
-        env_msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
+        env_msg="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n"
+        env_msg+="<b>BEM VINDO(a) AO BOT NET WORLD</b>\n"
+        env_msg+="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n\n"
         env_msg+="⚠️ <i>Comandos Disponiveis</i>\n\n"
         env_msg+="[<b>01</b>] /menu = Exibe menu\n"
         env_msg+="[<b>02</b>] /info = Exibe informacoes\n"
@@ -109,9 +109,9 @@ fun_ajuda() {
         return 0
     elif [[ "$(grep -w "$id_name" $ativos | awk '{print $NF}')" == 'revenda' ]]; then
         local env_msg
-        env_msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg+="<b>SEJA BEM VINDO(a) AO BOT NET WORLD</b>\n"
-        env_msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
+        env_msg="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n"
+        env_msg+="<b>BEM VINDO(a) AO BOT NET WORLD</b>\n"
+        env_msg+="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n\n"
         env_msg+="⚠️ <i>Comandos Disponiveis</i>\n\n"
         env_msg+="[<b>01</b>] /menu = Exibe menu\n"
         env_msg+="[<b>02</b>] /info = Exibe informacoes\n"
@@ -135,9 +135,9 @@ fun_ajuda() {
         return 0
     elif [[ "$(grep -w "$id_name" $ativos | awk '{print $NF}')" == 'subrevenda' ]]; then
         local env_msg
-        env_msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        env_msg+="<b>SEJA BEM VINDO(a) AO BOT NET WORLDb>\n"
-        env_msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
+        env_msg="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n"
+        env_msg+="<b>BEM VINDO(a) AO BOT NET WORLDb>\n"
+        env_msg+="⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇⋇\n\n"
         env_msg+="⚠️ <i>Comandos Disponiveis</i>\n\n"
         env_msg+="[<b>01</b>] /menu = Exibe menu\n"
         env_msg+="[<b>02</b>] /info = Exibe informacoes\n"
@@ -885,7 +885,7 @@ backup_users() {
 sobremim() {
     local msg
     msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-    msg+="<b>🤖 BOT SSHPLUS MANAGER 🤖</b>\n"
+    msg+="<b>🤖 BOT NET WORLD 🤖</b>\n"
     msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
     msg+="<b>Desenvolvido por:</b> @crazy_vpn\n"
     msg+="<b>Canal Oficial:</b> @SSHPLUS\n\n"
