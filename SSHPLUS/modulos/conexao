@@ -156,7 +156,6 @@
 				acl url4 dstdomain -i /SSHPLUS?
 				acl payload url_regex -i "$var_pay"
 				acl all src 0.0.0.0/0
-
 				http_access allow url1
 				http_access allow url2
 				http_access allow url3
@@ -1072,12 +1071,12 @@
 			# Adquirindo easy-rsa
 			echo ""
 			fun_dep() {
-				wget -O ~/EasyRSA-3.0.4.tgz "https://www.dropbox.com/home?preview=EasyRSA-3.0.4.tgz"
-				tar xzf ~/EasyRSA-3.0.4.tgz -C ~/
-				mv ~/EasyRSA-3.0.4/ /etc/openvpn/
-				mv /etc/openvpn/EasyRSA-3.0.4/ /etc/openvpn/easy-rsa/
+				wget -O ~/EasyRSA-3.0.1.tgz "https://github.com/OpenVPN/easy-rsa/releases/download/3.0.1/EasyRSA-3.0.1.tgz"
+				tar xzf ~/EasyRSA-3.0.1.tgz -C ~/
+				mv ~/EasyRSA-3.0.1/ /etc/openvpn/
+				mv /etc/openvpn/EasyRSA-3.0.1/ /etc/openvpn/easy-rsa/
 				chown -R root:root /etc/openvpn/easy-rsa/
-				rm -rf ~/EasyRSA-3.0.4.tgz
+				rm -rf ~/EasyRSA-3.0.1.tgz
 				cd /etc/openvpn/easy-rsa/
 				./easyrsa init-pki
 				./easyrsa --batch build-ca nopass
@@ -1765,5 +1764,3 @@ exit 0' >$RCLOCAL
 			esac
 		done
 	}
-	fun_conexao
-}
