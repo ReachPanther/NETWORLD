@@ -1767,3 +1767,4 @@ exit 0' >$RCLOCAL
 	}
 	fun_conexao
 }
+
