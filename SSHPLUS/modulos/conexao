@@ -1434,7 +1434,7 @@ exit 0' >$RCLOCAL
 		elif [[ "$resposta" = '4' ]]; then
 			if ps x | grep -w proxy.py | grep -v grep 1>/dev/null 2>/dev/null; then
 				clear
-				msgsocks=$(cat /etc/NETWORLD/proxy.py | grep -E "MSG =" | awk -F = '{print $2}' | cut -d "'" -f 2)
+				msgsocks=$(cat /etc/SSHPlus/proxy.py | grep -E "MSG =" | awk -F = '{print $2}' | cut -d "'" -f 2)
 				echo -e "\E[44;1;37m             PROXY SOCKS              \E[0m"
 				echo ""
 				echo -e "\033[1;33mSTATUS: \033[1;32m$msgsocks"
@@ -1767,4 +1767,3 @@ exit 0' >$RCLOCAL
 	}
 	fun_conexao
 }
-
