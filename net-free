@@ -68,4 +68,5 @@ done
 echo ""
 echo -e "        \033[0m\033[01;37m• \033[01;32mPROGRAMA FINALIZADO \033[01;37m•\033[0m"
 sleep 5
-./net-free
+read foo
+exit
