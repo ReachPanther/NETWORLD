@@ -1,25 +1,22 @@
  
-#! / bin / bash
-cd  $ HOME
-    mv mb2 $ PREFIX / bin / mb2
-    chmod + x $ PREFIX / bin / mb2
-Claro
-echo -e " \ 033 [1; 36m
-     ─────█─▄▀█──█▀▄─█───
-     ────▐▌───────────▐▌──
-     ────█▌▀▄──▄▄──▄▀▐█──
-     ───▐██───▀▀──▀▀──██▌──
-     ──▄████▄──▐▌▐▌──▄████▄─ \ 033 [1; 36m "
-echo -e " $ {CORTITLE} ========================================= $ {SCOLOR} " 
-echo -e " $ {CORTITLE}          𝐍𝐄𝐓 𝐖𝐎𝐑𝐋𝐃 𝐌𝐁 𝐅𝐑𝐄𝐄         $ {SCOLOR} "
-echo -e " $ {CORTITLE} ========================================= $ {SCOLOR} " 
-                    echo -e " \ 033 [1; 97mBy: @Jeffssh \ 033 [1; 97m "
-               echo -e " \ 033 [1; 97m Grupo sem telegrama: @ netword2020 \ 033 [1; 97m "
-echo  " "
-echo -e " \ 033 [1; 32mɴᴀᴏ ᴠᴇɴᴅᴀ ᴇsᴛᴇ ᴍᴇᴛᴏᴅᴏ \ 033 [1; 37m "
-echo -e " \ 033 [1; 32mɴᴀᴏ sᴇᴊᴀ ʙᴜʀʀᴏ ɴᴀᴏ ᴅɪᴠᴜʟɢᴜᴇ ɴᴏ ʏᴏᴜᴛᴜʙᴇ \ 033 [1; 37m "
-echo  " "
-sleep 1
+#!/bin/bash
+#create by: @Jeffssh - Grupo no Telegram:@netword2020
+#01/04/21
+clear
+sleep 2.5
+cowsay -f eyes NET-FREE | lolcat
+echo -e "\e[1;31m======================================================"
+figlet NET-FREE | lolcat
+echo -e "\e[0;35m     by: @Jeffssh - Grupo no Telegram:@netword2020    "
+echo -e "\e[1;31m======================================================"
+echo ""
+echo -e "\033[1;32mɴᴀᴏ ᴠᴇɴᴅᴀ ᴇsᴛᴇ ᴍᴇᴛᴏᴅᴏ \033[1;37m"
+echo -e "\033[1;32mɴᴀᴏ sᴇᴊᴀ ʙᴜʀʀᴏ ɴᴀᴏ ᴅɪᴠᴜʟɢᴜᴇ ɴᴏ ʏᴏᴜᴛᴜʙᴇ\033[1;37m"
+echo ""
+echo -e "\e[1;31m[!]\033[1;32mINTRUCÕES"
+echo -e "\e[1;31m[!]\033[1;32mMB'S PARA OPERADORA VIVO PÉ-PAGO"
+echo -e "\e[1;31m[!]\033[1;32mO CHIP TEM QUE ESTA SEM SALDO NENHUM"
+echo -e "\033[1;92mTRUE = APROVADO\033\033[1;92m  \033[1;31mFALSE = REPROVADO\033[1;31m"
 echo ""
 echo -e "    \033[0m\033[01;37m• \033[01;33mTESTADOR MULTITOKENS \033[0m\033[01;37m•\033[0m"
 echo -e "\033[01;37mTRUE = \033[01;32mAPROVADO \033[01;37m| FALSE = \033[01;31mREPROVADO"
@@ -64,6 +61,13 @@ data=$"msisdn=$NUMERO&campid=02f76cd1-eead-44ff-88dd-aa69538c7aef&opCode=VV" && 
 echo -e "\033[0m\033[01;32mCONTAGEM:\033[01;37m$i\033[03;037m"
 done
 echo ""
-echo -e "         \ 033 [1; 33m • \ 033 [1; 32mPROGRAMA FINALIZADO \ 033 [1; 33m • \ 033 [0m "
-echo  " "
-echo -e " \ 033 [1; 31m \ 033 [1; 33mPARA INICIAR NOVAMENTE DIGITE: \ 033 [1; 32mmb2 \ 033 [0m "
+echo -e "\033[0m\033[01;33mINICIANDO TOKEN 5\033[03;037m"
+for i in $(seq $VEZES);
+do
+data=$"msisdn=$NUMERO&campid=19313963-7198-4a33-9511-1c72c7d6152a&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl "${site}" -d "${data}"
+echo -e "\033[0m\033[01;32mCONTAGEM:\033[01;37m$i\033[03;037m"
+done
+echo ""
+echo -e "        \033[0m\033[01;37m• \033[01;32mPROGRAMA FINALIZADO \033[01;37m•\033[0m"
+sleep 5
+./mb2
