@@ -6,7 +6,7 @@ sleep 2.5
 cowsay -f eyes  NET-FREE | lolcat
 echo -e "\e[1;31m======================================================"
 figlet NET-FREE | lolcat
-echo -e "\e[0;35m     by: @Jeffssh - Grupo no Telegram:@netword2020    "
+echo -e "\e[0;35m   by: @Jeffssh - Grupo no Telegram:@netword2020      "
 echo -e "\e[1;31m======================================================"
 echo ""
 echo -e "\033[1;32mɴᴀᴏ ᴠᴇɴᴅᴀ ᴇsᴛᴇ ᴍᴇᴛᴏᴅᴏ \033[1;37m"
