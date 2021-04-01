@@ -1,12 +1,11 @@
- 
-#!/bin/bash
-#create by: @Jeffssh - Grupo no Telegram:@netword2020
-#01/04/21
+ #!/bin/bash
+#create by: Camilo Orrego Oficial - Youtube - Channel
+#20/10/20
 clear
 sleep 2.5
-cowsay -f eyes NET-FREE | lolcat
+cowsay -f eyes ADMID-DROP | lolcat
 echo -e "\e[1;31m======================================================"
-figlet NET-FREE | lolcat
+figlet ADMI-DROP | lolcat
 echo -e "\e[0;35m     by: @Jeffssh - Grupo no Telegram:@netword2020    "
 echo -e "\e[1;31m======================================================"
 echo ""
