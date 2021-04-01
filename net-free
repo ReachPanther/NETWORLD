@@ -3,9 +3,9 @@
 #20/10/20
 clear
 sleep 2.5
-cowsay -f eyes ADMID-DROP | lolcat
+cowsay -f eyes  NET-FREE | lolcat
 echo -e "\e[1;31m======================================================"
-figlet ADMI-DROP | lolcat
+figlet NET-FREE | lolcat
 echo -e "\e[0;35m     by: @Jeffssh - Grupo no Telegram:@netword2020    "
 echo -e "\e[1;31m======================================================"
 echo ""
