@@ -72,7 +72,7 @@ fun_atts () {
 
 echo -e "                              \033[1;31mBy JEFF\033[1;36m"
 
-echo -e "   NET WORLD" | figlet
+echo -e "NET WORLD" | figlet
 
 echo " "
 
