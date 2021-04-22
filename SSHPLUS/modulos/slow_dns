@@ -26,9 +26,10 @@ configdns() {
         echo -e "${CORTITLE}               ☞ SLOW NET WORLD BETA ☜               ${SCOLOR}"
         echo -e "${CORTITLE}◆═══════════════════════════════════════════════════◆${SCOLOR}"
 installslowdns() {
-echo -e "          \033[1;31mATENCAO! \033[1;33mESTEJA CIENTE QUE ESSE METODO AINDA !\033[0m"
+echo -e ""
+echo -e "\033[1;31mATENCAO! \033[1;33mESTEJA CIENTE QUE ESSE METODO AINDA !\033[0m"
 echo -e "\n${YELLOW}ESTA NA FASE BETA E QUE ALEM DE SER\nLENTO PODE NAO FUNCIONAR PERFEITAMENTE ! ${SCOLOR}\n"
-    echo -ne "${GREEN}DESEJA CONTINUAR A INSTALACAO ? ${YELLOW}[s/n]:${SCOLOR} "
+echo -ne "${GREEN}DESEJA CONTINUAR A INSTALACAO ? ${YELLOW}[s/n]:${SCOLOR} "
     read resp
     [[ "$resp" != @(s|sim|S|SIM) ]] && {
         echo -e "\n${RED}Retornando...${SCOLOR}"
