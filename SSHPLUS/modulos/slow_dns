@@ -68,9 +68,9 @@ initslow() {
             [[ -e $DIR/autodns ]] && nameserver=$(grep -w 'server.key' /etc/SSHPlus/dns/autodns | awk -F' ' '{print $9}') || nameserver='Null'
             tmx='curl -sO https://raw.githubusercontent.com/Jeffssha/dns/main/slowdns && chmod +x slowdns && ./slowdns'
             clear
-        echo -e "${CORTITLE}=====================================${SCOLOR}"
-        echo -e "${CORTITLE}     ☞ SLOW NET WORLD BETA ☜  ${SCOLOR}"
-        echo -e "${CORTITLE}=====================================${SCOLOR}"
+        echo -e "${CORTITLE}◆▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬◆${SCOLOR}"
+        echo -e "${CORTITLE}           ☞ SLOW NET WORLD BETA ☜       ${SCOLOR}"
+        echo -e "${CORTITLE}◆▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬◆${SCOLOR}"
             echo -e "\n${YELLOW}NAMESERVER(NS)${SCOLOR}: $nameserver"
             echo -e "${YELLOW}CHAVE PUBLICA${SCOLOR}: $keypub"
             echo -e "\n${GREEN}COMANDO TERMUX${SCOLOR}: ${tmx} ${nameserver} ${keypub}"
@@ -87,9 +87,9 @@ initslow() {
         fi
     } || {
         clear
-        echo -e "${CORTITLE}=====================================${SCOLOR}"
-        echo -e "${CORTITLE}     ☞ SLOW NET WORLD BETA ☜  ${SCOLOR}"
-        echo -e "${CORTITLE}=====================================${SCOLOR}"
+        echo -e "${CORTITLE}◆▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬◆${SCOLOR}"
+        echo -e "${CORTITLE}           ☞ SLOW NET WORLD BETA ☜       ${SCOLOR}"
+        echo -e "${CORTITLE}◆▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬◆${SCOLOR}"
         echo -ne "\n${GREEN}INFORME O DOMINIO NS${SCOLOR}: "
         read ns
         [[ -z "$ns" ]] && {
