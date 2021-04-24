@@ -79,22 +79,22 @@ echo -e "\n\033[1;32mKEY VALIDA!\033[1;32m"
 sleep 1s
 echo ""
 [[ -f "$HOME/usuarios.db" ]] && {
-    clear
-    echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
-    echo ""
-	echo -e "                 \033[1;33m• \033[1;31mATENCAO \033[1;33m• \033[0m"
-	echo ""
-    echo -e "\033[1;33mUma base de Dados de Usuários \033[1;32m(usuarios.db) \033[1;33mFoi" 
-    echo -e "Encontrada! Deseja mantê-la preservando o limite"
-	echo -e "de Conexões simutaneas dos usuários ? Ou Deseja"
-    echo -e "criar uma nova base de dados ?\033[0m"
-	echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mManter Base de Dados Atual\033[0m"
-	echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCriar uma Nova Base de Dados\033[0m"
-	echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
-    echo ""
-	tput setaf 2 ; tput bold ; read -p "Opção ?: " -e -i 1 optiondb ; tput sgr0
+clear
+echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
+echo ""
+echo -e "                 \033[1;33m• \033[1;31mATENCAO \033[1;33m• \033[0m"
+echo ""
+echo -e "\033[1;33mUma base de Dados de Usuários \033[1;32m(usuarios.db) \033[1;33mFoi"
+echo -e "Encontrada! Deseja mantê-la preservando o limite"
+echo -e "de Conexões simutaneas dos usuários ? Ou Deseja"
+echo -e "criar uma nova base de dados ?\033[0m"
+echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mManter Base de Dados Atual\033[0m"
+echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCriar uma Nova Base de Dados\033[0m"
+echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
+echo ""
+tput setaf 2 ; tput bold ; read -p "Opção ?: " -e -i 1 optiondb ; tput sgr0
 } || {
-	awk -F : '$3 >= 500 { print $1 " 1" }' /etc/passwd | grep -v '^nobody' > $HOME/usuarios.db
+awk -F : '$3 >= 500 { print $1 " 1" }' /etc/passwd | grep -v '^nobody' > $HOME/usuarios.db
 }
 [[ "$optiondb" = '2' ]] && awk -F : '$3 >= 500 { print $1 " 1" }' /etc/passwd | grep -v '^nobody' > $HOME/usuarios.db
 clear
@@ -106,9 +106,9 @@ echo ""
 echo -e "    \033[1;33mATUALIZAÇÕES COSTUMA DEMORAR UM POUCO!\033[0m"
 echo ""
 fun_attlist () {
-    apt-get update -y
-	[[ ! -d /usr/share/.plus ]] && mkdir /usr/share/.plus
-	echo "crz: $(date)" > /usr/share/.plus/.plus
+apt-get update -y
+[[ ! -d /usr/share/.plus ]] && mkdir /usr/share/.plus
+echo "crz: $(date)" > /usr/share/.plus/.plus
 }
 fun_bar 'fun_attlist'
 clear
@@ -120,7 +120,7 @@ echo ""
 inst_pct () {
 _pacotes=("bc" "screen" "nano" "unzip" "lsof" "netstat" "net-tools" "dos2unix" "nload" "jq" "curl" "figlet" "python3" "python-pip")
 for _prog in ${_pacotes[@]}; do
-    apt install $_prog -y
+apt install $_prog -y
 done
 pip install speedtest-cli
 }
