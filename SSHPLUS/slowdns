@@ -18,7 +18,7 @@ banner='
 |___/____\___/ \_/\_/ |___/|_|\_|___/'
 
 echo -e "${CORTITLE}=====================================${SCOLOR}" 
-echo -e "${CORTITLE}       NET WORLD  SLOWDNS BETA       ${SCOLOR}"
+echo -e "${CORTITLE}       TECO NET  SLOWDNS BETA       ${SCOLOR}"
 echo -e "${CORTITLE}=====================================${SCOLOR}" 
 echo -e "${WHITE}$banner${SCOLOR}"
 [[ ! -e dns ]] && {
