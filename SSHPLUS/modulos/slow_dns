@@ -23,7 +23,7 @@ configdns() {
 }
 
         echo -e "${CORTITLE}◆═════════════════════════════════════════════════════════════◆${SCOLOR}"
-        echo -e "${CORTITLE}                   ☞ SLOW NET WORLD BETA ☜                     ${SCOLOR}"
+        echo -e "${CORTITLE}                   ☞ SLOW TECO NET BETA ☜                     ${SCOLOR}"
         echo -e "${CORTITLE}◆═════════════════════════════════════════════════════════════◆${SCOLOR}"
 installslowdns() {
 echo -e ""
@@ -70,10 +70,10 @@ initslow() {
         elif [[ "$op" == '3' ]]; then
             [[ -e $DIR/server.pub ]] && keypub=$(cat $DIR/server.pub) || keypub='Null'
             [[ -e $DIR/autodns ]] && nameserver=$(grep -w 'server.key' /etc/SSHPlus/dns/autodns | awk -F' ' '{print $9}') || nameserver='Null'
-            tmx='curl -sO https://raw.githubusercontent.com/Jeffssha/dns/main/slowdns && chmod +x slowdns && ./slowdns'
+            tmx='curl -sO https://raw.githubusercontent.com/ReachPanther/dns/main/slowdns && chmod +x slowdns && ./slowdns'
             clear
         echo -e "${CORTITLE}◆═════════════════════════════════════════════════════════════◆${SCOLOR}"
-        echo -e "${CORTITLE}                   ☞ SLOW NET WORLD BETA ☜                     ${SCOLOR}"
+        echo -e "${CORTITLE}                   ☞ SLOW TECO NET BETA ☜                     ${SCOLOR}"
         echo -e "${CORTITLE}◆═════════════════════════════════════════════════════════════◆${SCOLOR}"
             echo -e "\n${YELLOW}NAMESERVER(NS)${SCOLOR}: $nameserver"
             echo -e "${YELLOW}CHAVE PUBLICA${SCOLOR}: $keypub"
@@ -92,7 +92,7 @@ initslow() {
     } || {
         clear
         echo -e "${CORTITLE}◆═════════════════════════════════════════════════════════════◆${SCOLOR}"
-        echo -e "${CORTITLE}                   ☞ SLOW NET WORLD BETA ☜                     ${SCOLOR}"
+        echo -e "${CORTITLE}                   ☞ SLOW TECO NET BETA ☜                     ${SCOLOR}"
         echo -e "${CORTITLE}◆═════════════════════════════════════════════════════════════◆${SCOLOR}"
         echo -ne "\n${GREEN}INFORME O DOMINIO NS${SCOLOR}: "
         read ns
